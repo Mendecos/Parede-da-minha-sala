@@ -1,0 +1,20 @@
+  .botao {
+  color: #000000; /* (equivalente a text-orange-700 no Tailwind) */
+  border: 1px ; /* Borda laranja */
+  border-radius: 5px;
+  background: #fdb96a;
+  padding: 0.2rem 1rem; /* Espaçamento interno (px-4 py-2 no Tailwind) */
+  cursor: pointer;     /* Mantém o cursor de clique */
+  font-weight: 200;
+  font-size: 15px;  
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.botoes-container {
+    display: flex;
+    gap: 10px; /* espaço entre os botões */
+}
+.botao:hover {
+  background: #e09f50;
+  color: white;
+}

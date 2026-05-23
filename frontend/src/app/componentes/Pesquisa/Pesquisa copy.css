@@ -1,0 +1,83 @@
+.pesquisa-container {
+  margin-top: 12px;
+  max-width: 1200px; /* equivalente ao max-w-5xl */
+  margin-left: auto;
+  margin-right: auto;
+  align-items: flex-start;
+}
+
+.pesquisa-form {
+  flex: 1;
+}
+
+.pesquisa-org {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.icon-lupa {
+  position: absolute;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+  color: #555;
+}
+
+.icon-lupa svg {
+  width: 16px;
+  height: 16px;
+}
+
+.pesquisa-input {
+  width: 100%;
+  padding: 12px 12px 12px 36px; /* padding extra à esquerda p/ o ícone */
+  font-size: 14px;
+  color: #111;
+  border: 1px solid #000;
+  border-radius: 8px;
+  outline: none;
+}
+
+.pesquisa-input:focus {
+  border-color: #2563eb; /* azul */
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.3);
+}
+
+.botao-pesquisar {
+  position: absolute;
+  right: 10px;
+  bottom: 6px;
+  background: transparent;
+  color: #1d4ed8;
+  border: 1px solid #1d4ed8;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.botao-pesquisar:hover {
+  background: #dbeafe;
+}
+
+.botao-lancamentos {
+  margin-left: 16px;
+  margin-top: 6px;
+  background: #fdb96a;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.botao-lancamentos:hover {
+  background: #ca8a04;
+  color: #fff;
+}

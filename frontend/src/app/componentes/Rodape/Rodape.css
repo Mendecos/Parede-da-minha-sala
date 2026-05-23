@@ -1,0 +1,20 @@
+.rodape{
+margin-top: 30px; 
+padding: 10px 20px 10px; 
+background: rgb(18,43,73); 
+background: linear-gradient(90deg, rgba(18,43,73,1) 0%, rgba(31,74,125,1) 50%); 
+min-height: 50px;}
+.centroRodape{ 
+    display: flex ; 
+    align-items: center; 
+    width: 100%; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    justify-content: space-between;}
+.centroRodape p{ 
+    text-align:end; 
+    color: #fff; 
+    font-weight: 400; 
+    letter-spacing: 0.02em; 
+    opacity: 0.7; font-size: 12px; 
+    margin-top: 23px;}

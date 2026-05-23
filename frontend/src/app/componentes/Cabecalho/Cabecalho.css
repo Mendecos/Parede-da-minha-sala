@@ -1,0 +1,16 @@
+.cabecalho {
+    display: flex;
+    justify-content:center;
+    align-items: center; /* impede que o botão estique */
+    padding: 10px 90px 10px;
+    background: linear-gradient(
+        192deg,
+        rgba(18, 43, 73, 1) 0%,
+        rgba(31, 74, 125, 1) 50%,
+        rgba(18, 43, 73, 1) 100%
+    );
+    min-height: 90px;
+}
+.cabecalho img {
+ height: 120px
+}

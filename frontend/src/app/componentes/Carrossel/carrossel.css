@@ -1,0 +1,27 @@
+.principal {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+.carrossel {
+  width: 100%;   /* mesma largura das imagens */
+    /* altura opcional */
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+}
+
+/* Faixa de imagens */
+.container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Cada imagem ocupa 100% da largura do carrossel */
+.container img {
+  width: 1000px;
+  height: 400px;
+  object-fit: contain; /* pode trocar pra cover se quiser preencher */
+}

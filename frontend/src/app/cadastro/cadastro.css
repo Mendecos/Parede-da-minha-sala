@@ -1,0 +1,84 @@
+/* Container principal */
+.tela-cadastro {
+  display: flex;
+  height: 100vh; /* ocupa altura total da tela */
+}
+
+/* Esquerda (imagem) */
+.tela-cadastro-esquerda {
+  flex: 1;
+  position: relative; /* necessário para o next/image fill */
+}
+
+/* Direita (formulário) */
+.tela-cadastro-direita {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3f4f6; /* cinza claro de fundo */
+  padding: 2rem;
+}
+
+/* Formulário */
+.folha {
+
+  
+  width: 100%;
+  max-width: 400px;
+}
+.folha h3{
+  font-weight: bold;
+}
+
+/* Campos */
+.campo {
+  margin-bottom: 1.25rem;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #111827;
+}
+
+.campo input {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  background-color: #f9fafb;
+}
+
+.campo input:focus {
+  outline: none;
+  border: 1px solid #2563eb;
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.3);
+}
+
+/* Botão */
+.botao-cadastro {
+  background: #fdb96a;
+  color: #000;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 1rem;
+  transition: background 0.3s;
+}
+
+.botao-cadastro:hover {
+  background: #e09f50;
+  color: white;
+}
+
+/* Texto abaixo */
+.texto-cadastro {
+  margin-top: 1rem;
+  text-align: center;
+}
