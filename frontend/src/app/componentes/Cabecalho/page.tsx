@@ -1,6 +1,4 @@
 import "./Cabecalho.css";
-import Link from "next/link";
-
 const Cabecalho = () => {
   // JSX
   return (

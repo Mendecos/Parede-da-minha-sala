@@ -1,81 +1,93 @@
 "use client";
-import "./Lancamento.css";
+
 import { useEffect, useState } from "react";
+import "./Lancamento.css";
 import axios from "axios";
 import Pesquisa from "../Pesquisa/page";
 
-interface Item {
+interface Arte {
   id: number;
-  titulo: string;
-  sinopse: string;
+  nome: string;
+  descricao: string;
+  artista: string;
   foto?: string;
 }
 
 const Lancamento = () => {
-  const [itens, setitens] = useState<Item[]>([]);
-  const [itensFiltrados, setItensFiltrados] = useState<Item[]>([]);
+  const [artes, setArtes] = useState<Arte[]>([]);
+  const [artesFiltradas, setArtesFiltradas] = useState<Arte[]>([]);
 
   useEffect(() => {
-    const buscaritens = async () => {
+    const buscarArtes = async () => {
       try {
-        const resposta = await axios.get<Item[]>(
-          "http://127.0.0.1:5000/livros",
+        const resposta = await axios.get<Arte[]>(
+          "http://127.0.0.1:5000/artes"
         );
-        setitens(resposta.data);
-        setItensFiltrados(resposta.data); // 👈 inicia com todos
+
+        setArtes(resposta.data);
+        setArtesFiltradas(resposta.data);
       } catch (erro) {
-        console.error("Erro ao buscar itens:", erro);
+        console.error("Erro ao buscar artes:", erro);
       }
     };
 
-    buscaritens();
+    buscarArtes();
   }, []);
 
   const handlePesquisar = (texto: string) => {
     if (!texto.trim()) {
-      setItensFiltrados(itens);
+      setArtesFiltradas(artes);
       return;
     }
 
     const termo = texto.toLowerCase();
 
-    const resultado = itens.filter(
-      (item) =>
-        item.titulo.toLowerCase().includes(termo) ||
-        item.id.toString() === termo,
+    const resultado = artes.filter(
+      (arte) =>
+        arte.nome.toLowerCase().includes(termo) ||
+        arte.id.toString() === termo
     );
 
-    setItensFiltrados(resultado);
+    setArtesFiltradas(resultado);
   };
 
   return (
     <div>
-      {/* 🔍 Pesquisa */}
+      {/* Pesquisa */}
       <Pesquisa onPesquisar={handlePesquisar} />
 
-      <div className="titulo">Lançamentos Recentes</div>
+      <div className="titulo">Artes Recentes</div>
 
       <div className="cards-container">
-        {itensFiltrados.length > 0 ? (
-          itensFiltrados.map((livro) => (
-            <div className="card-lancamento" key={livro.id}>
+        {artesFiltradas.length > 0 ? (
+          artesFiltradas.map((arte) => (
+            <div className="card-lancamento" key={arte.id}>
               <div className="card-conteudo">
+
                 <div className="img-card">
                   <img
-                    src={livro.foto || "./Cabecalho_img/logoescrito.png"}
-                    alt={livro.titulo}
+                    src={
+                      arte.foto ||
+                      "./Cabecalho_img/logoescrito.png"
+                    }
+                    alt={arte.nome}
                   />
                 </div>
+
                 <div className="descricao">
-                  <h1>{livro.titulo}</h1>
-                  <h3>{livro.sinopse}</h3>
+                  <h1>{arte.nome}</h1>
+
+                  <h2>{arte.artista}</h2>
+
+                  <p>{arte.descricao}</p>
                 </div>
+
               </div>
             </div>
           ))
         ) : (
           <p style={{ color: "black", textAlign: "center" }}>
-            Nenhum livro encontrado.
+            Nenhuma arte encontrada.
           </p>
         )}
       </div>
