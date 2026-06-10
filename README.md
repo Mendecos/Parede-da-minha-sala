@@ -2,7 +2,7 @@
 
 Repositorio original :https://github.com/mwsecond/book_store 
 
-O projeto foi construído utilizando tecnologias web modernas, com foco em desempenho e experiência do usuário. O front-end foi desenvolvido em Next.js e React, permitindo a criação de páginas dinâmicas e interativas. Já o back-end foi desenvolvido em Python com Flask, responsável pelo gerenciamento das rotas, autenticação de usuários e comunicação com o banco de dados MySQL.
+O projeto foi construído utilizando tecnologias web modernas. O front-end foi desenvolvido em Next.js e React, permitindo a criação de páginas dinâmicas e interativas. Já o back-end foi desenvolvido em Python com Flask, responsável pelo gerenciamento das rotas, autenticação de usuários e comunicação com o banco de dados MySQL.
 
 ## A plataforma possui funcionalidades como:
 cadastro e login de administradores;
