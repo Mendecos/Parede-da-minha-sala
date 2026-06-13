@@ -1,5 +1,5 @@
 import "./Rodape.css";
-import Image from "next/image";
+
 function Rodape() {
   return (
     <footer className="rodape">

@@ -1,9 +1,10 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { useEffect, useState } from "react";
 import "./Lancamento.css";
 import axios from "axios";
-import Pesquisa from "../Pesquisa/page";
+import Pesquisa from "../Pesquisa/pesquisa";
 
 interface Arte {
   id: number;

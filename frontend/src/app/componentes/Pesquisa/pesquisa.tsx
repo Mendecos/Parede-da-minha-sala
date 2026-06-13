@@ -1,5 +1,6 @@
+"use client";
 import { useState } from "react";
-import "./Pesquisa copy.css";
+import "./Pesquisa.css";
 
 interface PesquisaProps {
   onPesquisar: (texto: string) => void;

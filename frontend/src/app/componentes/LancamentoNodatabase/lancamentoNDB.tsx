@@ -1,9 +1,9 @@
 "use client";
 import { useState } from "react";
-import Pesquisa from "../PesquisaNodatabase/page";
-import CardArte from "../CardArte/page"
+import Pesquisa from "../PesquisaNodatabase/pesquisaNDB";
+import CardArte from "../CardArte/cardArte"
 
-import { artes } from "../../data/artes";
+import { artes } from "../../../data/artes";
 
 export default function Lancamento() {
   const [artesFiltradas, setArtesFiltradas] =

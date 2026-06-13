@@ -1,6 +1,6 @@
 "use client";
 
-import "./Pesquisa copy.css";
+import "./Pesquisa.css";
 
 interface Props {
   onPesquisar: (texto: string) => void;
