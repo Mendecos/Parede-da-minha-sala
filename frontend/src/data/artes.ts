@@ -26,4 +26,21 @@ export const artes: Arte[] = [
     foto:
       "https://res.cloudinary.com/dziwyuhuy/image/upload/v1781373291/homem-fim-de-semana_sa2hmg.jpg",
   },
+  {
+    id: 4,
+    nome: "Quando duas Galáxia se chocam",
+    artista: "Danielle Souza",
+    descricao: "Uma galáxia distante.",
+    foto:
+      "https://res.cloudinary.com/dziwyuhuy/image/upload/q_auto/f_auto/v1781373190/galaxia_puy4yn.jpg",
+  },
+  {
+    id: 5,
+    nome: "MiranhaVerso",
+    artista: "Danielle Souza",
+    descricao: "Você quer dizer eu?",
+    foto:
+      "https://res.cloudinary.com/dziwyuhuy/image/upload/q_auto/f_auto/v1781373190/homens-aranha_iqur5h.jpg",
+  },
+  
 ];
